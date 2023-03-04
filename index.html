@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pepsi Website Landing Page</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="images/logo.png" alt="logo"></a>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Produtos</a></li>
+               <li><a href="#">Algo novo</a></li>
+               <li><a href="#">Notícias</a></li>
+               <li><a href="#">Contato</a></li> 
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>é isso que<br><span>eu gosto</span></h2>
+                <p>A Pepsi é uma marca de refrigerante que tem uma história interessante e um sabor icônico que é conhecido e apreciado em todo o mundo. Foi criada em 1898 pelo farmacêutico americano Caleb Bradham, que a batizou originalmente como "Brad's Drink". Ele criou a bebida em sua farmácia em Nova Berna, na Carolina do Norte, como uma mistura de açúcar, água, aromas de noz de cola e ácido cítrico.</p>
+                <a href="#">Veja todos os Produtos</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/pepsi001.png" alt="Pepsi" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/pepsi001.png" alt="pepsi" onclick="imgSlider('./images/pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="images/pepsi002.png" alt="pepsi" onclick="imgSlider('./images/pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="images/pepsi003.png" alt="pepsi" onclick="imgSlider('./images/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt="Instagram"></a></li>
+
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
