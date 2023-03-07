@@ -19,3 +19,13 @@ function ativaMenu(){
         menu.style.display = 'none'
     }
 }
+
+function tamanhoTela(){
+    if(window.innerWidth >= '992'){
+        menu.style.display = 'block'
+    }else{
+        menu.style.display = 'none'
+
+    }
+}
+

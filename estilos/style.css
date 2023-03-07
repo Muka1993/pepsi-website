@@ -48,14 +48,24 @@ header a img:hover {
 header .menu {
     display: none;
     position: absolute;
-    top: 72px;
-    left: 300px;  
+    top: 79px;
+    left: 302px;  
 }
 
 header ul li {
     list-style: none;
+    text-align: center;
     background-color: #272829;
+    border: 2px solid #cecece;
     padding: 10px;
+}
+
+header ul li:hover {
+    background-color: #c91313;
+}
+
+header ul li a:hover {
+    background-color: #c91313;
 }
 
 header ul li a {
@@ -71,6 +81,7 @@ header ul li a {
   top: 50px;
   left: 350px;
   color: #fff;
+  cursor: pointer;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
