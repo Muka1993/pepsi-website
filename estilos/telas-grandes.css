@@ -34,7 +34,11 @@ TELAS MAIORES: ACIMA DE 1200px
     
     header .logo {
         position: relative;
-        max-width: 80px;    
+        max-width: 80px;
+    }
+
+    header a img {
+        padding: 20px;
     }
     
     header a img:hover {
@@ -45,9 +49,8 @@ TELAS MAIORES: ACIMA DE 1200px
     header .menu {
         display: block;
         position: relative;
-        top: 0px;
-        left: 0px;
-       
+        top: -30px;
+        left: 0px;    
     }
     
     header ul li {
@@ -70,9 +73,13 @@ TELAS MAIORES: ACIMA DE 1200px
         padding: 5px;
         text-decoration: none;
     }
+
+    .btn-menu {
+        display: none;
+
+    }
     
     .material-symbols-outlined {
-        display: none;  
         top: 50px;
         left: 550px;
         color: #fff;
@@ -90,7 +97,7 @@ TELAS MAIORES: ACIMA DE 1200px
     .content {
         position: relative;
         width: 100%;
-        padding: 10px;
+        padding: 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -158,7 +165,7 @@ TELAS MAIORES: ACIMA DE 1200px
     
     .thumb {
         position: absolute;
-        left: 70%;
+        left: 60%;
         bottom: 20px;
         transform: translateX(-50%);
         display: flex;
@@ -206,12 +213,234 @@ TELAS MAIORES: ACIMA DE 1200px
     }
     
     .sci li a:hover {
-       transform: scale(0.8);
+       transform: scale(0.5);
+       filter: drop-shadow(0 0 9px #fff);
        background-color: transparent;
     }
     
     .sci li a img {
         width: 60px;
+        
+    }
+}
+
+
+/* TELAS MAIORES */
+
+@media screen and (min-width: 1367px) and (max-width: 2666px) {
+    section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #0062be;
+        transition: 0.5s;
+    }
+    
+    /* CABEÇALHO */
+    
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 100px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .logo {
+        position: relative;
+        max-width: 80px;
+    }
+
+    header a img {
+        padding: 20px;
+        width: 170px;
+    }
+    
+    header a img:hover {
+        transform: rotate(360deg);
+        transition: 0.6s ease-in-out;
+    }
+    
+    header .menu {
+        display: block;
+        position: relative;
+        top: -30px;
+        left: 0px;    
+    }
+    
+    header ul li {
+        list-style: none;
+        text-align: center;
+        display: inline-block;
+        padding: 10px;
+        background-color: transparent;
+        border: none;
+    }
+    
+    header ul li:hover {
+        
+    }
+    
+    header ul li a {
+        font-size: 1.2em;
+        color: #fff;
+        font-weight: 400;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    .btn-menu {
+        display: none;
+
+    }
+    
+    .material-symbols-outlined {
+        top: 50px;
+        left: 550px;
+        color: #fff;
+        cursor: pointer;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 900,
+        'GRAD' 0,
+        'opsz' 48
+    }
+    
+    
+    /* CONTEÚDO */
+    
+    .content {
+        position: relative;
+        width: 100%;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .content .textBox {
+        position: relative;
+        max-width: 600px;
+        margin-top: 120px;
+    }
+    
+    .content .textBox h2 {
+       color: #fff;
+       font-size: 3.5em;
+       line-height: 1.5em;
+       font-weight: 900;
+       padding-top: 10px;
+       text-transform: uppercase;
+    }
+    
+    .content .textBox h2 span {
+       font-size: 2.1em; 
+    }
+    
+    .content .textBox p {
+       color: #fff;
+       font-size: 1.4em;
+       padding: 30px 0;
+    }
+    
+    .content .textBox a {
+       display: inline-block;
+       margin-top: 20px;
+       padding: 10px 40px;
+       background: #fff;
+       color: #111;
+       border-radius: 40px;
+       font-size: 1em;
+       font-weight: 500;
+       letter-spacing: 1px;
+       text-decoration: none;
+       text-transform: uppercase;
+       box-shadow: 0 0 10px #00000085;  
+       transition: 0.5s;
+    }
+    
+    .content .textBox a:hover {
+        box-shadow: 0 0 10px #000;
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+    }
+    
+    .content .imgBox {
+       width: 700px;
+       display: flex;
+       padding-right: 180px;
+       justify-content: flex-end; 
+    }
+    
+    .content .imgBox img {
+        max-width: 280px;
+    }
+    
+    /* LATAS */
+    
+    .thumb {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        display: flex;
+    }
+    
+    .thumb li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 50px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .thumb li:hover {
+        transform: translateY(-15px);
+    }
+    
+    .thumb li img {
+        max-width: 80px;
+    }
+    
+    /* REDES SOCIAIS */
+    
+    .sci {
+       position: absolute;
+       top: 50%;
+       right: 25px;
+       transform: translateY(-50%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+    }
+    
+    .sci li {
+        list-style: none;
+    }
+    
+    .sci li a {
+       display: inline-block;
+       filter: invert(1);
+       margin: 5px 0;
+       transform: scale(0.4);
+       transition: 0.5s;
+    }
+    
+    .sci li a:hover {
+       transform: scale(0.5);
+       filter: drop-shadow(0 0 9px #fff);
+       background-color: transparent;
+    }
+    
+    .sci li a img {
+        width: 100px;
         
     }
 }

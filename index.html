@@ -15,10 +15,12 @@
 <body onload="tamanhoTela()">
     <section class="sec">
         <header>
-            <a href="#"><img src="images/logo.png" alt="logo"></a>
-            <span class="material-symbols-outlined" onclick="ativaMenu()">
-                menu
-                </span>
+            <a href="#"><img src="images/logo.png" alt="logo" class="logoheader"></a>
+            <div class="btn-menu" onclick="ativaMenu()">
+                <span class="material-symbols-outlined" >
+                    menu
+                    </span>
+            </div>
             <ul class="menu">
                <li><a href="#">Home</a></li>
                <li><a href="#">Produtos</a></li>
@@ -30,7 +32,7 @@
             <div class="textBox">
                 <h2>é isso que<br><span>eu gosto</span></h2>
                 <p>A Pepsi é uma marca de refrigerante que tem uma história interessante e um sabor icônico que é conhecido e apreciado em todo o mundo. Foi criada em 1898 pelo farmacêutico americano Caleb Bradham, que a batizou originalmente como "Brad's Drink". Ele criou a bebida em sua farmácia em Nova Berna, na Carolina do Norte, como uma mistura de açúcar, água, aromas de noz de cola e ácido cítrico.</p>
-                <a href="#">Veja todos os Produtos</a>
+                <a href="#" onclick="mudaFundo()">Veja todos os Produtos</a>
             </div>
             <div class="imgBox">
                 <img src="images/pepsi001.png" alt="Pepsi" class="pepsi">
