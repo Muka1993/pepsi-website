@@ -9,7 +9,7 @@ function changeBgColor(color){
     sec.style.background = color;
 }
 
-
+// FUNÇÃO MENU HAMBURGUER
 function ativaMenu(){
     var menu = document.querySelector('.menu');
 
@@ -20,6 +20,7 @@ function ativaMenu(){
     }
 }
 
+// FUNÇÃO QUE FORÇA O DISPLAY BLOCK PARA TELAS MAIORES
 function tamanhoTela(){
     if(window.innerWidth >= '992'){
         menu.style.display = 'block'
