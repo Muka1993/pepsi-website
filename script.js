@@ -26,6 +26,5 @@ function tamanhoTela(){
         menu.style.display = 'block'
     }else{
         menu.style.display = 'none'
-
     }
 }
